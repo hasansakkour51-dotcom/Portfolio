@@ -1,0 +1,149 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    z-index: 100;
+  }
+  
+  .logo {
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #0ef;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar a:hover {
+    color: #0ef;
+  }
+  
+  /* زر المينيو */
+  /* زر المينيو */
+  .menu-toggle {
+    background: transparent;
+    border: 2px solid #0ef;
+    color: #0ef;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: 0.3s;
+  }
+  
+  .menu-toggle:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 15px #0ef;
+  }
+  
+  /* Offcanvas */
+  .main-offcanvas {
+    background: #081b29;
+    color: #ededed;
+    width: 260px;
+    border-left: 2px solid #0ef;
+  }
+  
+  .main-offcanvas .offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .offcanvas-title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .offcanvas-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+  }
+  
+  .offcanvas-nav a {
+    color: #ededed;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: 0.3s;
+  }
+  
+  .offcanvas-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #0ef;
+    transition: 0.3s;
+  }
+  
+  .offcanvas-nav a:hover {
+    color: #0ef;
+  }
+  
+  .offcanvas-nav a:hover::after {
+    width: 100%;
+  }
+  .lang-btn {
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #0ef;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+    transition: 0.3s;
+  }
+  
+  .lang-btn:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 30px #0ef;
+    transform: translateY(-2px);
+  }
+  
+  
+  .navbar a.active {
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+  }
+  

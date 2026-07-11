@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #ededed;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #0a1f33;
+
+}
+/* ===========================
+   GLOBAL RESPONSIVE TYPOGRAPHY
+   =========================== */
+
+/* قاعدة عامة لكل الموقع */
+html {
+  font-size: 16px;
+}
+
+/* العناوين الكبيرة */
+h1,
+.sub-title {
+  font-size: clamp(1.8rem, 4vw, 3rem) !important;
+  line-height: 1.2;
+}
+
+/* العناوين المتوسطة */
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  line-height: 1.3;
+}
+
+/* العناوين الصغيرة */
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+/* النصوص الأساسية */
+p,
+span,
+li,
+a,
+label {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+}
+.text {
+  font-size: 1em;
+}
+/* الأزرار */
+button,
+.btn,
+.send-btn {
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  font-weight: 600;
+}
+
+.sub-title span {
+  font-size: 1.2em; /* أكبر من النص الأساسي */
+  position: relative;
+  text-shadow: 0 0 10px #b400ff;
+  font-weight: 700;
+}
+.sub-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* المسافة تحت الكلمة */
+  width: 100%;
+  height: 3px; /* سماكة الخط */
+  background: linear-gradient(90deg, #0ef, #b400ff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ef, 0 0 10px #b400ff;
+}
+.about .sub-title {
+  text-align: left;
+}
+/* ===========================
+   RESPONSIVE FIXES
+   =========================== */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}

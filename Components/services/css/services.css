@@ -1,0 +1,91 @@
+#services {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.services-item {
+  background: #0a1f2e;
+  padding: 40px 25px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid rgba(180, 0, 255, 0.3);
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 0 0 10px rgba(180, 0, 255, 0.15), 0 0 20px rgba(0, 238, 255, 0.1);
+}
+
+.services-item:hover {
+  transform: translateY(-10px);
+  border-color: #b400ff;
+
+  box-shadow: 0 0 20px rgba(180, 0, 255, 0.35), 0 0 35px rgba(0, 238, 255, 0.25);
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-block-end: 70px;
+}
+.sub-title span {
+  color: #b400ff;
+}
+
+.services-item i {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #0ef;
+  transition: 0.3s;
+}
+
+.services-item:hover i {
+  color: #b400ff;
+}
+
+.services-item h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.services-item p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+/* زر Learn More */
+.read {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid #b400ff;
+  color: #b400ff;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.services-item:hover .read {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.read:hover {
+  background: #b400ff;
+  color: #081b29;
+  box-shadow: 0 0 20px #b400ff;
+}
