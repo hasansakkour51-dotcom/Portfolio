@@ -1,4 +1,3 @@
-Portfolio – Modern Developer Showcase
 This portfolio represents one of my most polished and professional projects—built entirely with pure HTML, CSS, and JavaScript.
 It reflects my commitment to clean code, SEO‑friendly structure, and modern frontend architecture, while delivering a smooth, visually appealing, and highly responsive user experience.
 
@@ -84,5 +83,5 @@ It demonstrates my ability to build clean, modern, responsive, and well‑struct
 👨‍💻 Author
 Hasan Mazen Saqour  
 Frontend Developer – React / Next.js
-GitHub:(https://github.com/hasansakkour51-dotcom) 
+GitHub: (https://github.com/hasansakkour51-dotcom) 
 LinkedIn: (https://www.linkedin.com/in/hasan-saqour-03480230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
