@@ -1,6 +1,12 @@
 This portfolio represents one of my most polished and professional projects—built entirely with pure HTML, CSS, and JavaScript.
 It reflects my commitment to clean code, SEO‑friendly structure, and modern frontend architecture, while delivering a smooth, visually appealing, and highly responsive user experience.
 
+
+🌐 Live Demo
+👉 View Portfolio Website  
+(https://ubiquitous-custard-450835.netlify.app/)
+
+
 The goal of this portfolio is to present my work in a clean, technical, and modern way, using animations, structured components, and a design system inspired by tech‑driven aesthetics.
 
 📌 Project Description
@@ -19,9 +25,7 @@ High‑quality user experience across all devices
 
 Every section is carefully crafted to highlight professionalism, clarity, and modern design principles.
 
-🌐 Live Demo
-👉 View Portfolio Website  
-(Add your live demo link here)
+
 
 🧩 Key Features
 1. Clean Architecture
