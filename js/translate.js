@@ -64,7 +64,7 @@ const translations = {
       projects_title2: "Projects",
   
       project1_title: "Articlua",
-      project1_desc: "A modern responsive web application built with React & Tailwind.",
+      project1_desc: "Modern Articles Management System built with React. Full CRUD operations with API integration, clean architecture, and component-based design. Includes responsive UI, dark/light mode, and charts for analytics. A professional project showcasing scalable structure and enterprise-level quality.",
       project1_tech1: "React",
       project1_tech2: "bootstrap",
       project1_tech3: "API",
@@ -76,11 +76,54 @@ const translations = {
       project2_tech3: "JavaScript",
   
       project3_title: "FutureTech",
-      project3_desc: "Full-stack application with clean architecture and API integration.",
+      project3_desc: "FutureTech – Modern Two‑Page Responsive Website",
       project3_tech1: "HTML",
       project3_tech2: "CSS",
       project3_tech3: "JS",
   
+      project4_title: "Dwello",
+      project4_desc: "Dwello is a responsive real estate landing page developed during my training period.",
+      project4_tech1: "HTML",
+      project4_tech2: "CSS",
+      project4_tech3: "JS",
+
+      project5_title: "IPDC",
+      project5_desc: "IPDC is a responsive corporate landing page developed during my training period.",
+      project5_tech1: "HTML",
+      project5_tech2: "CSS",
+      project5_tech3: "JS",
+
+      project6_title: "Jadoo",
+      project6_desc: "Jadoo is a responsive travel and tourism landing page developed during my training period.",
+      project6_tech1: "HTML",
+      project6_tech2: "CSS",
+      project6_tech3: "JS",
+  
+      project7_title: "Lawyer",
+      project7_desc: "The Lawyer Landing Page is one of the earliest projects I built when I first entered the frontend development field.",
+      project7_tech1: "HTML",
+      project7_tech2: "CSS",
+      project7_tech3: "JS",
+  
+      project8_title: "Viatours",
+      project8_desc: "Viatours is a complete travel website interface developed as part of my practical frontend training. The goal of the project was to build a clean, modern, and user‑friendly design while applying real‑world frontend techniques and best practices.",
+      project8_tech1: "HTML",
+      project8_tech2: "CSS",
+      project8_tech3: "JS",
+
+      project9_title: "Hasan Landing Page",
+      project9_desc: "The Hasan's Landing Page is a modern, animated website template showcasing a clean, responsive design with immersive visuals.",
+      project9_tech1: "HTML",
+      project9_tech2: "CSS",
+      project9_tech3: "JS",
+  
+
+      project10_title: "TamStore",
+      project10_desc: "**TamStore** is a modern e‑commerce web application built with **React**. It integrates **API services**,Clean Architecture,Component based reusibility, global state management using **Zustand**, and provides a smooth user experience with **Framer Motion animations**. The app includes authentication, protected routes, wishlist management, and full CRUD functionality in the Profile page",
+      project10_tech1: "React",
+      project10_tech2: "Bootstrap",
+      project10_tech3: "Api",
+
       project_view: "View Project",
       project_github: "GitHub",
   

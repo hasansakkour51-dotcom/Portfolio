@@ -19,12 +19,12 @@
       {
         "@context": "https://schema.org/",
         "@type": "Person",
-        "name": "Your Name",
+        "name": "Hasan Mazen Saqour",
         "jobTitle": "Frontend Developer",
         "url": "https://yourwebsite.com",
         "sameAs": [
-          "https://github.com/yourname",
-          "https://linkedin.com/in/yourname"
+          "https://github.com/hasansakkour51-dotcom",
+          "https://linkedin.com/in/hasan-saqour-03480230b"
         ]
       }
     </script>
@@ -35,7 +35,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="./images/‏‏photo_2026-01-21_21-57-15 - نسخة.jpg"
+      href="./images/photo_2026-01-21_21-57-15.jpg"
     />
 
     <!-- AOS CSS -->
@@ -53,10 +53,6 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
@@ -67,6 +63,7 @@
     <link rel="stylesheet" href="./Components/services/css/services.css" />
     <link rel="stylesheet" href="./Components/skills/css/skills.css" />
     <link rel="stylesheet" href="./Components/footer/css/footer.css" />
+    <link rel="stylesheet" href="./Components/Recommendation/css/Recommendation.css">
     <link
       rel="stylesheet"
       href="./Components/latestProject/css/latestProject.css"
@@ -75,17 +72,62 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      /* Loader Styles */
+      .loaderWrapper {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      .spinner {
+        width: 60px;
+        height: 60px;
+        border: 6px solid #ccc;
+        border-top: 6px solid #ffcc00;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      .loaderText {
+        margin-top: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .hidden {
+        display: none !important;
+      }
+    </style>
   </head>
 
   <body>
+    <!-- Loader -->
+    <div id="globalLoader" class="loaderWrapper">
+      <div class="spinner"></div>
+      <p class="loaderText">Loading...</p>
+    </div>
+
     <header id="header"></header>
     <section id="hero"></section>
     <section id="about"></section>
     <section id="services"></section>
     <section id="skills" class="py-5"></section>
     <section id="latestProject"></section>
+    <section id="Recommendation"></section>
+
     <section id="contact"></section>
     <section id="footer"></section>
+
     <!-- AOS JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
@@ -93,6 +135,12 @@
       AOS.init({
         duration: 1200,
         once: true,
+      });
+
+      // Loader fix: show at start, hide after page load
+      const loader = document.getElementById("globalLoader");
+      window.addEventListener("load", () => {
+        loader.classList.add("hidden");
       });
     </script>
 
@@ -133,8 +181,7 @@
           }
         });
 
-        // Email format check
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
         if (email.value && !emailPattern.test(email.value)) {
           email.nextElementSibling.textContent = "Invalid email format";
           email.nextElementSibling.style.display = "block";
@@ -153,8 +200,7 @@
         }
 
         // Show loader
-        document.querySelector(".btn-text").style.display = "none";
-        document.querySelector(".loader").style.display = "inline-block";
+        loader.classList.remove("hidden");
 
         emailjs
           .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
@@ -162,15 +208,13 @@
             showToast("Message sent successfully!");
             form.reset();
             form.classList.add("success-animate");
-
             setTimeout(() => form.classList.remove("success-animate"), 500);
           })
           .catch(() => {
             showToast("Failed to send message", "error");
           })
           .finally(() => {
-            document.querySelector(".btn-text").style.display = "inline";
-            document.querySelector(".loader").style.display = "none";
+            loader.classList.add("hidden");
           });
       });
     </script>

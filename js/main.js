@@ -103,7 +103,11 @@ loadComponent(
   "../Components/latestProject/html/latestProject.html",
   "latestProject"
 );
-
+loadComponent(
+  "Recommendation",
+  "../Components/Recommendation/html/Recommendation.html",
+  "Recommendation"
+);
 // CONTACT
 loadComponent(
   "contact",
