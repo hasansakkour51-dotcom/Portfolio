@@ -4,7 +4,7 @@ It reflects my commitment to clean code, SEO‑friendly structure, and modern fr
 
 🌐 Live Demo
 👉 View Portfolio Website  
-(https://ubiquitous-custard-450835.netlify.app/)
+(https://superlative-mochi-1a1433.netlify.app/)
 
 
 The goal of this portfolio is to present my work in a clean, technical, and modern way, using animations, structured components, and a design system inspired by tech‑driven aesthetics.
